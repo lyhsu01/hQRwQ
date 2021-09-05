@@ -17,7 +17,7 @@ pred = model.predict(np.expand_dims(noise_image, 0))
 
 time_2 = time.time()
 time_interval = time_2 - time_1
-print(time_interval)
+print('Elapsed time is %7.6f seconds.'%(time_interval))
 DImg = get_image(pred[0])
 
 OImg = cv2.imread('logoSMC4.bmp')
